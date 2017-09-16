@@ -21,6 +21,7 @@ this is file after finish first 4 topics
 this is the file of 5th topic
 
 ## cookbook
+cookbook.txt is explainantion of object_by_activities.csv, see oringal cookbook in zip file for detail
 
 ## how to use
 * unzip getdata%2Fprojectfiles%2FUCI HAR Dataset.zip change directory to "Dataset"
