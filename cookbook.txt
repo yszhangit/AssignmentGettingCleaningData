@@ -1,3 +1,21 @@
+Units
+- The units used for the accelerations (total and body) are 'g's (gravity of earth -> 9.80665 m/seg2).
+- The gyroscope units are rad/seg.
+
+Observation:
+- Features are normalized and bounded within [-1,1].
+
+Variables
+
+- "subjectID"
+    30 subjects, with ID 1 to 30. they are 30 volunteers
+- "activity"
+    activity name for the testing signal
+
+Activities
+The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain
+
+following are the names of variables of activites. they are picked from 561 vectors, and applied average
 "subjectID"
     30 subjects, with ID 1 to 30. they are 30 volunteers
 "activity"
