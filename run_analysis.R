@@ -59,10 +59,10 @@ mean_std<-mutate(mean_std,activityID=activity_names[mean_std$activityID,2])
 # rename
 mean_std<-rename(mean_std, activity=activityID)
 # write output file
-write.table(mean_std, file="mean_std.csv", row.name=FALSE)
+write.table(mean_std, file="mean_std.txt", row.name=FALSE)
 
 # group by subjects and activities, apply mean on grouped data
 objects_by_activity<-group_by(mean_std,subjectID,activity) %>% summarise_all(funs(mean))
 # write output file
-write.table(objects_by_activity,file="object_by_activities.csv", row.name=FALSE)
+write.table(objects_by_activity,file="object_by_activities.txt", row.name=FALSE)
 
